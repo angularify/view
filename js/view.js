@@ -47,6 +47,7 @@
     };
 
     /*// move slide with mouse wheel
+    //cleaner transistion should be made
     function move_wheel(e){
         var delta = 0;
         // for chrome and etc..
@@ -63,6 +64,7 @@
             return current_slide = next_slide();
     }
     */
+
     // move slide with keyboard
     function move(e){
         // check key code
