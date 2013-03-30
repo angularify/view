@@ -6,9 +6,9 @@ View.js - is very simple and lightwiegt library for building web presentation wr
 Usage
 =============
 
-  * Incude `css/content.css` and `layout.css` to your html file.
-  * Include at the end of `body` section `js/view.js` file.
-  * Create some div with `class="slide"` and some content in the html file
+  * Include `css/content.css` and `layout.css` to your html file.
+  * Include at the end of `body` section `<script src='js/view.js'></script>` file.
+  * Create some div's with `class="slide"` and some content in the html file
   * Done.
 
 See example in index.html
@@ -17,8 +17,7 @@ Features
 =============
 
   * Lightweight library for building web presentations.
-  * Move slides with up/down key.
-  * Move slides with mouse wheel. 
+  * Move slides with up/down key. 
 
 TODO
 =============

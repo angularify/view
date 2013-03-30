@@ -16,8 +16,8 @@
     // add listener to keydown
     document.addEventListener('keydown', move, false);
     // add listener to mouse wheel
-    document.addEventListener('mousewheel', move_wheel, false);
-    document.addEventListener("DOMMouseScroll", move_wheel, false);
+   // document.addEventListener('mousewheel', move_wheel, false);
+   // document.addEventListener("DOMMouseScroll", move_wheel, false);
 
     // return element by id
     var el = function(id){
@@ -46,7 +46,7 @@
         }
     };
 
-    // move slide with mouse wheel
+    /*// move slide with mouse wheel
     function move_wheel(e){
         var delta = 0;
         // for chrome and etc..
@@ -62,7 +62,7 @@
             // move up
             return current_slide = next_slide();
     }
-
+    */
     // move slide with keyboard
     function move(e){
         // check key code
