@@ -6,9 +6,9 @@ View.js - is very simple and lightwiegt library for building web presentation wr
 Usage
 =============
 
-  * Incude `css/content.css` and `layout.css` to you html file.
-  * Incude to the end of `body` section `js/view.js` file.
-  * Create some div with `class="slide"` and some content in it in you html file.
+  * Incude `css/content.css` and `layout.css` to your html file.
+  * Include at the end of `body` section `js/view.js` file.
+  * Create some div with `class="slide"` and some content in the html file
   * Done.
 
 See example in index.html
@@ -27,6 +27,7 @@ TODO
   * Effects.
   * Plugins.
   * Progress bar.
+  * Improve scrolling for MAC OS X
 
 Contribute
 ============
