@@ -1,0 +1,67 @@
+/*
+ * Edit this for slide style
+ */
+.slide{
+    background: #ededed; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ededed 16%, #ffffff 98%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#ededed), color-stop(98%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ededed 16%,#ffffff 98%);
+    background: -o-linear-gradient(top,  #ededed 16%,#ffffff 98%);
+    background: -ms-linear-gradient(top,  #ededed 16%,#ffffff 98%);
+    background: linear-gradient(to bottom,  #ededed 16%,#ffffff 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); 
+}
+
+/*
+ * Edit this for slide content style
+ */
+
+body{
+		text-align: left;
+}
+
+h1{
+	font-size: 3.77em;
+}
+
+h2{
+	font-size: 2.11em;
+}
+
+h3{
+	font-size: 1.55em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+strong{
+	font-size: 30px;
+	font-family: Droid;
+	text-align: center;
+}
+
+section{
+	font-size: 20px;
+	float: left;
+	text-align: center;
+	padding-left: 400px;
+	padding-right: 400px;
+	clear: both;
+}
+
+ul{
+	margin: 0;
+	padding-left: 400px;
+	padding-right: 400px;
+	text-align: left;
+}
+
+li{
+
+}
+
+a{
+    color: #3399FF;
+}
