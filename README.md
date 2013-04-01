@@ -1,7 +1,7 @@
 View.js
 =============
 
-View.js - is very simple and lightweigt library for building web presentation written with HTML/javascript.
+View.js - is very simple and lightweight library for building web presentation written with HTML/javascript.
 
 Usage
 =============
