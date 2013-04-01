@@ -26,7 +26,7 @@ TODO
   * Effects.
   * Plugins.
   * Progress bar.
-  * Improve scrolling for MAC OS X
+  * Improve scrolling for MAC OS X(trackpad)
   * Play button
 
 Contribute
