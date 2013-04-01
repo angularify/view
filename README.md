@@ -1,14 +1,14 @@
 View.js
 =============
 
-View.js - is very simple and lightwiegt library for building web presentation written with HTML/javascript.
+View.js - is very simple and lightweigt library for building web presentation written with HTML/javascript.
 
 Usage
 =============
 
   * Include `css/content.css` and `layout.css` to your html file.
   * Include at the end of `body` section `<script src='js/view.js'></script>` file.
-  * Create some div's with `class="slide"` and some content in the html file
+  * Create `div` tag with `class="slide"`. `div` will be indexed in the file.
   * Done.
 
 See example in index.html
