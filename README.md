@@ -40,7 +40,7 @@ Contribute
 Contributors
 ==============
 
-  * Brandon Davis - (@_voidPirate)[https://twitter.com/_voidPirate]
+  * Brandon Davis - [@_voidPirate](https://twitter.com/_voidPirate)
 
 Author
 =============
