@@ -37,6 +37,11 @@ Contribute
   * Test it.
   * Send pull request.
 
+Contributors
+==============
+
+  * Brandon Davis - (@_voidPirate)[https://twitter.com/_voidPirate]
+
 Author
 =============
 
