@@ -2,6 +2,7 @@
     
     // get slides
     var nl = document.getElementsByClassName('slide');
+    var play_btn = document.getElementById('play-btn');
     // convert NodeList with slides to array
     var slides = [];
     for (var i = 0, ref = slides.length = nl.length; i < ref; i++) {
@@ -15,9 +16,6 @@
 
     // add listener to keydown
     document.addEventListener('keydown', move, false);
-    // add listener to mouse wheel
-   // document.addEventListener('mousewheel', move_wheel, false);
-   // document.addEventListener("DOMMouseScroll", move_wheel, false);
 
     // return element by id
     var el = function(id){
@@ -46,25 +44,6 @@
         }
     };
 
-    /*// move slide with mouse wheel
-    //cleaner transistion should be made
-    function move_wheel(e){
-        var delta = 0;
-        // for chrome and etc..
-        if (e.wheelDelta)
-            delta = e.wheelDelta;
-        else
-            delta = e.detail;
-        // move slides
-        if (delta == 120 || delta == -3)
-            // move down
-            return current_slide = prev_slide();
-        else
-            // move up
-            return current_slide = next_slide();
-    }
-    */
-
     // move slide with keyboard
     function move(e){
         // check key code
@@ -78,4 +57,15 @@
                 return current_slide = prev_slide();
         };  
     };
+
+    function presentation_start(){
+        current_slide = next_slide();
+    }
+
+    function play_presentation(){
+        setInterval(presentation_start, 4000);
+    }
+
+    //play_presentation(); // uncomment this line to add automatic play feature in presentation 
+
 }());
