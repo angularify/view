@@ -27,7 +27,7 @@ TODO
   * Plugins.
   * Progress bar.
   * Improve scrolling for MAC OS X
-  * Play button
+  * Play button (automatically play presentation added)
 
 Contribute
 ============
