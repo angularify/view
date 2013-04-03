@@ -1,4 +1,4 @@
-(function() {
+var ViewJs = (function(options) {
     
     // get slides
     var nl = document.getElementsByClassName('slide');
@@ -58,14 +58,30 @@
         };  
     };
 
+    // slide show
     function presentation_start(){
         current_slide = next_slide();
     }
 
-    function play_presentation(){
-        setInterval(presentation_start, 4000);
+    // play slide show
+    function play_presentation(slide_show_timeout){
+        setInterval(presentation_start, slide_show_timeout);
     }
 
-    //play_presentation(); // uncomment this line to add automatic play feature in presentation 
+    // check options and start presentation
+    check_slide_show(options);
 
-}());
+    /*
+     * Check presentation options
+     */
+    function check_slide_show(options){
+        if (options.slide_show == true && options.slide_show_timeout > 0)
+            play_presentation(options.slide_show_timeout);
+    }
+});
+
+/*
+ * Example of usage:
+ */
+//var options = {slide_show : true, slide_show_timeout: 25000};
+//ViewJs(options);

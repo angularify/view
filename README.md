@@ -7,8 +7,21 @@ Usage
 =============
 
   * Include `css/content.css` and `layout.css` to your html file.
-  * Include at the end of `body` section `<script src='js/view.js'></script>` file.
+  * Include at the end of `body` section `<script src='js/view.min.js'></script>` file.
   * Create `div` tag with `class="slide"`. `div` will be indexed in the file.
+
+Create presentation in your js file:
+
+```javascript
+ViewJs(options);
+```
+
+Where options:
+
+```javascript
+var options = {slide_show : true, slide_show_timeout: 10000};
+```
+
   * Done.
 
 See example in index.html
@@ -17,7 +30,8 @@ Features
 =============
 
   * Lightweight library for building web presentations.
-  * Move slides with up/down key. 
+  * Move slides with up/down key.
+  * Slide show with configurable timeout.
 
 TODO
 =============
