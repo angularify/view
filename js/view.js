@@ -9,7 +9,7 @@ var ViewJs = (function(options) {
         slides[i] = nl[i];
     };
 
-    // full screen support click anywhere on slide to enable
+    //add listener to document for fullscreen
     addEventListener("click", function() {
     var fs = document.documentElement,
         rfs =  fs.requestFullScreen
@@ -92,7 +92,7 @@ var ViewJs = (function(options) {
 
 /*
  * Example of usage:
- * remove slide_show_timeout:10000 to have automatic slide transistion 
+ * remove slide_show_timeout: 10000 to have automatic presentation start disabled
  */
-    var options = {slide_show : true, slide_show_timeout:3000};
+    var options = {slide_show : true, slide_show_timeout:10000};
     ViewJs(options);
