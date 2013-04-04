@@ -6,6 +6,12 @@ html, body{
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+
+	-webkit-transition: all 600ms ease, opacity 300ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease, opacity 300ms ease;
+    -o-transition: all 600ms ease, opacity 300ms ease;
+    transition: all 600ms ease, opacity 300ms ease;
 }
 
 .presentation{
