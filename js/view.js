@@ -2,12 +2,22 @@ var ViewJs = (function(options) {
     
     // get slides
     var nl = document.getElementsByClassName('slide');
-    var play_btn = document.getElementById('play-btn');
+
     // convert NodeList with slides to array
     var slides = [];
     for (var i = 0, ref = slides.length = nl.length; i < ref; i++) {
         slides[i] = nl[i];
     };
+
+    // full screen support click anywhere on slide to enable
+    addEventListener("click", function() {
+    var fs = document.documentElement,
+        rfs =  fs.requestFullScreen
+            || fs.webkitRequestFullScreen
+            || fs.mozRequestFullScreen
+    ;
+    rfs.call(fs);
+    });
 
     // get slides count
     var slides_count = slides.length;
@@ -82,6 +92,7 @@ var ViewJs = (function(options) {
 
 /*
  * Example of usage:
+ * remove slide_show_timeout:10000 to have automatic slide transistion 
  */
-//var options = {slide_show : true, slide_show_timeout: 25000};
-//ViewJs(options);
+    var options = {slide_show : true, slide_show_timeout:3000};
+    ViewJs(options);
