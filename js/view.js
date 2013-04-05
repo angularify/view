@@ -10,7 +10,7 @@ var ViewJs = (function(options) {
     };
 
     //add listener to document for fullscreen
-    addEventListener("click", function() {
+    addEventListener("dblclick", function() {
     var fs = document.documentElement,
         rfs =  fs.requestFullScreen
             || fs.webkitRequestFullScreen
