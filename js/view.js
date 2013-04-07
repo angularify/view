@@ -88,6 +88,8 @@ var ViewJs = (function(options) {
         if (options.slide_show == true && options.slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
+    
+    console.log(slides_count);
 });
 
 /*
