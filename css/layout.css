@@ -7,11 +7,11 @@ html, body{
 	margin-top: 0px;
 	margin-bottom: 0px;
 
-	-webkit-transition: all 600ms ease, opacity 300ms ease;
+	-webkit-transition: all 600ms ease, opacity 600ms ease;
        -moz-transition: all 600ms ease;
-   		-ms-transition: all 600ms ease, opacity 300ms ease;
-         -o-transition: all 600ms ease, opacity 300ms ease;
-            transition: all 600ms ease, opacity 300ms ease;
+   		-ms-transition: all 600ms ease, opacity 600ms ease;
+         -o-transition: all 600ms ease, opacity 600ms ease;
+            transition: all 600ms ease, opacity 600ms ease;
 }
 
 .presentation{
@@ -29,15 +29,22 @@ html, body{
 
 .slide{
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	font-size: 100%;
 	margin-right: 0px;
 	margin-left: 0px;
 	margin-top: 0px;
-	top : 20%;
 	padding: 7% 0px;
+	right : 0;
 	margin-bottom: 0px;
 	overflow-y:hidden;
 	overflow-x:hidden;
 	text-align: center;
+	box-shadow: 3px 3px 2px #ccc;
+}
+
+.sidebar{
+	position: fixed;
+	top: 10em;
+	right: 1em;
 }
