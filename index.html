@@ -25,29 +25,26 @@
 
         <div class="slide">
             <h1>What is it view.js?</h1>
-            <section>View.js - is html/javascript very very lightweight framework for building presentation. Lightweight and simplicity is main point of view.js. Just include <code>view.js</code> file to your html file, fill content, write css design for your presentation as you choose and that's all, it's ready to use.
+            <section>View.js - is an html/javascript very very lightweight framework for building presentations. Lightweight and simplicity is the main point of view.js. Just include <code>view.js</code> file to your html file, fill content, write css design for your presentation as you choose and that's all, it's ready to use.
             </section>
         </div>
 
         <div class="slide">
             <h1>What is in?</h1>
             <ul>
-                <li><strong>css/content.css - content style (change it to your needs of your design)</strong></li>
-                <li><strong>css/layout.css - presentation layout (do not edit this!)</strong></li>
-                <li><strong>js/view.js - main view.js functional (do not edit this!)</strong></li>
+                <li><code>css/content.css</code> - content style (change it to your needs of your design)</li>
+                <li><code>css/layout.css</code> - presentation layout (! do not edit this !)</li>
+                <li><code>js/view.js</code> - main view.js functional (! do not edit this !)</li>
             </ul>
         </div>
 
         <div id="slide4" class="slide">
             <h1>How to use?</h1>
-            <section>First of all create html file which will be future presentation, like this <code>index.html</code>. Incude to your html file</section>
-            <section><code>css/layout.css</code> and <code>css/content.css</code> in head section and <code>js/view.js</code> in the end of body. 
-                Now you can</section>
-            <section>create the slides. Every slide is <code>div</code> element with <code>class = "slide"</code> and also with some presentation content in it.
-            </section>
-            <section>Just put some divs with <code>class="slide"</code> into your html file and edit <code>content.css</code> for your design needs.
-            
-            </section>
+                <ol>
+                <li>Create an html file and include the following in the <code>head</code> section:<code> css/layout.css</code>(! do not edit this stylesheet !). Next add <code>css/content.css</code> for your own styling. </li>
+                <li>Add the view.js file in your html file. Simply add the script tag right above the <code>body</code> tag, like so: <code>script src="js/view.min.js"</code>.</li>
+                <li>Mark up the html file with your content you want to be displayed in the presentation. Slides are created using the class slide, like so: <code>div class="slide"</code>. 
+            </ol>
         </div>
         <div class="slide">
             <h1>THE END</h1>
@@ -58,7 +55,6 @@
     </div>
     <script language="javascript" type="text/javascript" src="js/view.js"></script>
     <div class="sidebar">
-        <div id="counter">Current slide: </div>
     </div>
   </body>
 </html>

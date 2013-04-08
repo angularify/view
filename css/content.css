@@ -17,7 +17,9 @@
  */
 
 body{
-	text-align: left;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	line-height: 24px;
 }
 
 h1{
@@ -42,24 +44,30 @@ strong{
 	text-align: center;
 }
 
-section{
-	font-size: 20px;
-	float: left;
+ol{
 	text-align: center;
-	padding-left: 400px;
-	padding-right: 400px;
-	clear: both;
-}
-
-ul{
-	margin: 0;
-	padding-left: 400px;
-	padding-right: 400px;
-	text-align: left;
 }
 
 li{
+	text-align: left;
+}
 
+code{
+  color: blue;
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border: 1px solid grey;
+  padding: 0 5px 0 5px; 
+  border-radius: 4px;
+}
+
+section{
+	font-size: 20px;
+	float: left;
+	text-align: left;
+	padding-left: 400px;
+	padding-right: 400px;
+	clear: both;
 }
 
 a{

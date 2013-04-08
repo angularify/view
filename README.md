@@ -32,7 +32,7 @@ Features
   * Lightweight library for building web presentations.
   * Move slides with up/down key.
   * Slide show with configurable timeout.
-  * Full screenmode - double click anywhere in the slide show to enable.
+  * Full screenmode - double click anywhere in the presentation to enable.
 
 TODO
 =============
