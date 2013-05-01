@@ -26,7 +26,7 @@ var ViewJs = (function(options) {
     var slides_count = slides.length;
     // get current slide
     var current_slide = slides[0];
-    
+
     // add listener to keydown
     document.addEventListener('keydown', move, false);
 
@@ -38,7 +38,7 @@ var ViewJs = (function(options) {
     // get next slide after current
     var next_slide = function(){
         var current_slide_index = slides.indexOf(current_slide);
-        if (current_slide_index == slides_count - 1)
+        if (current_slide_index === slides_count - 1)
             return slides[current_slide_index];
         else{
             slides[current_slide_index + 1].scrollIntoView(true);
@@ -49,7 +49,7 @@ var ViewJs = (function(options) {
     // get previous slide after current
     var prev_slide = function(){
         var current_slide_index = slides.indexOf(current_slide);
-        if (current_slide_index == 0)
+        if (current_slide_index === 0)
             return slides[current_slide_index];
         else{
             slides[current_slide_index - 1].scrollIntoView(true);
@@ -89,7 +89,7 @@ var ViewJs = (function(options) {
      */
     
     function check_slide_show(options){
-        if (options.slide_show == true && options.slide_show_timeout > 0)
+        if (options.slide_show === true && options.slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
  
@@ -98,7 +98,7 @@ var ViewJs = (function(options) {
 
 /*
  * Example of usage:
- * remove slide_show_timeout: 10000 to have automatic presentation start disabled
+ * remove 'slide_show_timeout: 10000' to have automatic presentation start disabled
  */
     ViewJs(options = {
         slide_show : true, 
