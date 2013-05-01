@@ -3,13 +3,16 @@ var ViewJs = (function(options) {
     // get slides
     var nl = document.getElementsByClassName('slide');
 
+    //get slide counter
+    var sc = document.getElementById("slide_counter");
+
     // convert NodeList with slides to array
     var slides = [];
     for (var i = 0, ref = slides.length = nl.length; i < ref; i++) {
         slides[i] = nl[i];
     };
 
-    //add listener to document for fullscreen
+    // for fullscreen
     addEventListener("dblclick", function() {
     var fs = document.documentElement,
         rfs =  fs.requestFullScreen
@@ -23,7 +26,7 @@ var ViewJs = (function(options) {
     var slides_count = slides.length;
     // get current slide
     var current_slide = slides[0];
-
+    
     // add listener to keydown
     document.addEventListener('keydown', move, false);
 
@@ -84,17 +87,20 @@ var ViewJs = (function(options) {
     /*
      * Check presentation options
      */
+    
     function check_slide_show(options){
         if (options.slide_show == true && options.slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
-    
-    console.log(slides_count);
+ 
+    sc.innerHTML = "# of slides: " + slides_count;
 });
 
 /*
  * Example of usage:
  * remove slide_show_timeout: 10000 to have automatic presentation start disabled
  */
-    var options = {slide_show : true, slide_show_timeout:10000};
-    ViewJs(options);
+    ViewJs(options = {
+        slide_show : true, 
+        slide_show_timeout : 10000
+    });

@@ -19,7 +19,10 @@ ViewJs(options);
 Where options:
 
 ```javascript
-var options = {slide_show : true, slide_show_timeout: 10000};
+ViewJS(options = {
+  slide_show : true, 
+  slide_show_timeout: 10000
+});
 ```
 
   * Done.
