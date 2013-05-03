@@ -14,6 +14,11 @@ html, body{
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+		 -o-user-select: none;
+	
 	-webkit-transition: all 600ms ease, opacity 600ms ease;
        -moz-transition: all 600ms ease;
    		-ms-transition: all 600ms ease, opacity 600ms ease;
