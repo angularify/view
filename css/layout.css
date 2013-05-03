@@ -51,7 +51,9 @@ html, body{
 }
 
 .sidebar{
+	font-size: 14px;
 	position: fixed;
+	width: 7em;
 	top: 10em;
 	right: 1em;
 }

@@ -50,7 +50,7 @@ TODO
 Contribute
 ============
 
-  * Fork main ybot repository (https://github.com/0xAX/view.js).
+  * Fork main view.js repository (https://github.com/0xAX/view.js).
   * Make your changes in your clone of view.js.
   * Test it.
   * Send pull request.
