@@ -12,15 +12,29 @@ var ViewJs = (function(options) {
         slides[i] = nl[i];
     };
 
-    // for fullscreen
-    addEventListener("dblclick", function() {
-    var fs = document.documentElement,
-        rfs =  fs.requestFullScreen
-            || fs.webkitRequestFullScreen
-            || fs.mozRequestFullScreen
-    ;
-    rfs.call(fs);
-    });
+    // add listener to dblclick event to request fullscreen
+    addEventListener("dblclick", toggleFullScreen, false);
+
+    // toggles full screen in presentation
+    function toggleFullScreen(){
+    if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {               // current working methods
+        if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+        }   else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+        }   else if (document.documentElement.webkitRequestFullScreen) {
+            document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+    } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+        }   else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+        }   else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+        }
+    }
+}
 
     // get slides count
     var slides_count = slides.length;
@@ -92,7 +106,8 @@ var ViewJs = (function(options) {
         if (options.slide_show === true && options.slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
- 
+    
+    // display # of slides in control panel
     sc.innerHTML = "# of slides: " + slides_count;
 });
 

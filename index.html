@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>view.js presentation framework</title>
+    <title>ViewJS web presentation plugin</title>
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="screen"></link>
     <link rel="stylesheet" href="css/content.css" type="text/css" media="screen"></link>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'><!--web fonts -->
   </head>
   <body>
     <!-- Fork me at github -->
@@ -14,43 +15,54 @@
          presentation content into it  -->
 	<div class="presentation">
         <div class="slide">
-            <h1>VIEW.JS</h1>
-            <strong>HTML&Javascript lightweight presentation framework</strong>
+            <h1>ViewJS</h1>
+            <strong>Lightweight HTML5 & JavaScript web presentation plugin</strong>
             <br/><br/>
             <strong>Created by - <a href="https://github.com/0xAX" target="_blank">0xAX</a>/<a href="https://twitter.com/0xAX" target="_blank">@0xAX</a></strong><br>
             <strong>Co-Creator - <a href="https://github.com/voidpirate" target="_black">voidpirate</a>/<a href="https://twitter.com/_voidPirate" target="_blank">@_voidpirate</a></strong><br>
             <br>
-            <small>Press UP or Down on your keyboard to move slide into view. Double click anywhere to enable fullscreen mode.</small>
+            <small>Press UP or Down on your keyboard to move slide into view. Double click anywhere to toggle fullscreen on or off.</small>
         </div>
 
         <div class="slide">
-            <h1>What is it view.js?</h1>
-            <section>View.js - is an html/javascript very very lightweight framework for building presentations. Lightweight and simplicity is the main point of view.js. Just include <code>view.js</code> file to your html file, fill content, write css design for your presentation as you choose and that's all, it's ready to use.
+            <h1>What is ViewJS you say?</h1>
+            <section>ViewJS - is a HTML5 & JavaScript is a web presentation plugin, that is a light weight. Lightweight and simplicity is the main point of ViewJS. Just include the<code>view.js</code> file at the bottom of your HTML file. The JS code looks for all <code>class="slide"</code> instances and creates slides for each. 
             </section>
         </div>
 
         <div class="slide">
-            <h1>What is in?</h1>
+            <h1>You say its lightweight so what do I get?</h1>
             <ul>
                 <li><code>css/content.css</code> - content style (change it to your needs of your design)</li>
-                <li><code>css/layout.css</code> - presentation layout (! do not edit this !)</li>
-                <li><code>js/view.js</code> - main view.js functional (! do not edit this !)</li>
+                <li><code>css/layout.css</code> - include layout.css into your HTML</li>
+                <li><code>js/view.min.js</code> - all the magic happens here</li>
             </ul>
         </div>
 
         <div id="slide4" class="slide">
-            <h1>How to use?</h1>
+            <h1>How do I use this bad boy?</h1>
                 <ol>
-                <li>Create an html file and include the following in the <code>head</code> section:<code> css/layout.css</code>(! do not edit this stylesheet !). Next add <code>css/content.css</code> for your own styling. </li>
-                <li>Add the view.js file in your html file. Simply add the script tag right above the <code>body</code> tag, like so: <code>script src="js/view.min.js"</code>.</li>
-                <li>Mark up the html file with your content you want to be displayed in the presentation. Slides are created using the class slide, like so: <code>div class="slide"</code>. 
+                <li>Create an HTML file and include the following in the <code>head</code> section:<code> css/layout.css</code>. Next add <code>css/content.css</code> for your own styling. </li>
+                <li>Create a script tag right above the closing <code>body</code> tag, like so: <code>script src="js/view.min.js"</code>.</li>
+                <li>Mark up the HTML file with your content you want to be displayed in the presentation. Slides are created using the class slide, like so: <code>div class="slide"</code>. 
             </ol>
+        </div>
+        <div id="slide5" class="slide">
+            <h1>support | bugs | features</h1>
+                <p>Find some bugs, need support, or just want to request some new features?</p>
+                    <ul>
+                        <li><strong>Support</strong> - send tweet to either <a href="https://twitter.com/_voidpirate">@_voidpirate</a> or <a href="https://twitter.com/0xAX">@0xAX</a>, and let us know what your running into.</a></li>
+                        <li><strong>Bugs & Features</strong> - add this to the issues section here, and assign to either one of us and we will take care of it :)</strong>
         </div>
         <div class="slide">
             <h1>THE END</h1>
             <strong>Twitter:<a href="https://twitter.com/0xAX">@0xAX</a></strong>
             <br/>
             <strong>Github:<a href="https://github.com/0xAX">0xAX</a></strong>
+            <br/>
+             <strong>Twitter:<a href="https://twitter.com/_voidpirate">@_voidpirate</a></strong>
+            <br/>
+            <strong>Github:<a href="https://github.com/voidpirate">voidpirate</a></strong>
         </div>
     </div>
     <div class="sidebar">

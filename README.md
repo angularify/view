@@ -1,7 +1,7 @@
-View.js
+ViewJS
 =============
 
-View.js - is very simple and lightweight library for building web presentation written with HTML/javascript.
+ViewJS - is a HTML5 & JavaScript is a web presentation plugin, that is a light weight.
 
 Usage
 =============
@@ -25,17 +25,13 @@ ViewJS(options = {
 });
 ```
 
-  * Done.
-
-See example in index.html
-
 Features
 =============
 
   * Lightweight library for building web presentations.
   * Move slides with up/down key.
   * Slide show with configurable timeout.
-  * Full screenmode - double click anywhere in the presentation to enable.
+  * Full screenmode - double click anywhere to toggle on or off.
 
 TODO
 =============

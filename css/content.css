@@ -2,14 +2,8 @@
  * Edit this for slide style
  */
 .slide{
-    background: #ededed; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ededed 16%, #ffffff 98%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#ededed), color-stop(98%,#ffffff));
-    background: -webkit-linear-gradient(top,  #ededed 16%,#ffffff 98%);
-    background: -o-linear-gradient(top,  #ededed 16%,#ffffff 98%);
-    background: -ms-linear-gradient(top,  #ededed 16%,#ffffff 98%);
-    background: linear-gradient(to bottom,  #ededed 16%,#ffffff 98%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); 
+	background-image: url('http://www.brandondavis.co/uploads/knitted-netting.png');
+	background-repeat: repeat;
 }
 
 /*
@@ -18,10 +12,14 @@
 
 body{
 	text-align: center;
-	font-family: Helvetica, Arial;
+	font-family: 'Roboto Slab', serif,Helvetica, Arial;
 	line-height: 24px;
 }
 
+a{
+	text-decoration: none;
+	color: yellow;
+}
 h1{
 	font-size: 3.77em;
 }
@@ -69,8 +67,4 @@ section{
 	padding-left: 400px;
 	padding-right: 400px;
 	clear: both;
-}
-
-a{
-    color: #3399FF;
 }
