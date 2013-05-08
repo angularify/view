@@ -1,7 +1,7 @@
 ViewJS
 =============
 
-ViewJS - is a HTML5 & JavaScript is a web presentation plugin, that is a light weight.
+ViewJS - is a lightweight HTML5 & JavaScript web presentation plugin.
 
 Usage
 =============
@@ -28,7 +28,7 @@ ViewJS(options = {
 Features
 =============
 
-  * Lightweight library for building web presentations.
+  * Lightweight plugin for building web presentations.
   * Move slides with up/down key.
   * Slide show with configurable timeout.
   * Full screenmode - double click anywhere to toggle on or off.
