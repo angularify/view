@@ -1,7 +1,7 @@
-ViewJS
+View
 =============
 
-ViewJS - is a lightweight HTML5 & JavaScript web presentation plugin.
+View - is a lightweight HTML5 & JavaScript web presentation plugin.
 
 Usage
 =============
@@ -19,7 +19,7 @@ ViewJs(options);
 Where options:
 
 ```javascript
-ViewJS(options = {
+View(options = {
   slide_show : true, 
   slide_show_timeout: 10000
 });
@@ -46,8 +46,8 @@ TODO
 Contribute
 ============
 
-  * Fork main viewjs repository (https://github.com/0xAX/view.js).
-  * Make your changes in your clone of view.js.
+  * Fork main View repository (https://github.com/0xAX/view).
+  * Make your changes in your clone of view.
   * Test it.
   * Send pull request.
 
