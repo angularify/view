@@ -13,7 +13,7 @@ Usage
 Create presentation in your js file:
 
 ```javascript
-ViewJs(options);
+View(options);
 ```
 
 Where options:
