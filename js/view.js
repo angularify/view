@@ -1,4 +1,4 @@
-var ViewJs = (function(options) {
+var View = (function(options) {
     
     // get slides
     var nl = document.getElementsByClassName('slide');
@@ -17,7 +17,7 @@ var ViewJs = (function(options) {
 
     // toggles full screen in presentation
     function toggleFullScreen(){
-    if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {               // current working methods
+    if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {              
         if (document.documentElement.requestFullScreen) {
                 document.documentElement.requestFullScreen();
         }   else if (document.documentElement.mozRequestFullScreen) {
@@ -115,7 +115,7 @@ var ViewJs = (function(options) {
  * Example of usage:
  * remove 'slide_show_timeout: 10000' to have automatic presentation start disabled
  */
-    ViewJs(options = {
+    View(options = {
         slide_show : true, 
         slide_show_timeout : 10000
     });
