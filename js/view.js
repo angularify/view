@@ -23,7 +23,7 @@ var View = (function(options) {
         }   else if (document.documentElement.mozRequestFullScreen) {
                 document.documentElement.mozRequestFullScreen();
         }   else if (document.documentElement.webkitRequestFullScreen) {
-            document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            document.documentElement.webkitRequestFullScreen();
     }
     } else {
             if (document.cancelFullScreen) {
@@ -43,6 +43,10 @@ var View = (function(options) {
 
     // add listener to keydown
     document.addEventListener('keydown', move, false);
+    //mouse scroll
+    document.addEventListener('mousewheel', mouse_scroll, false);
+    //mouse scroll for firefox
+    document.addEventListener('DOMMouseScroll', mouse_scroll, false);
 
     // return element by id
     var el = function(id){
@@ -68,6 +72,20 @@ var View = (function(options) {
         else{
             slides[current_slide_index - 1].scrollIntoView(true);
             return slides[current_slide_index - 1]; 
+        }
+    };
+
+    // mouse scrolling
+    function mouse_scroll(e){
+        //scroll test
+        console.log("Mouse scrolled...");
+        //get delta of mouse whell
+        var delta = e.wheelDelta;
+
+        if(delta == -120 || delta == -3){
+            return current_slide = next_slide();
+        } else{
+            return current_slide = prev_slide();
         }
     };
 
@@ -106,9 +124,6 @@ var View = (function(options) {
         if (options.slide_show === true && options.slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
-    
-    // display # of slides in control panel
-    sc.innerHTML = "# of slides: " + slides_count;
 });
 
 /*
@@ -117,5 +132,5 @@ var View = (function(options) {
  */
     View(options = {
         slide_show : true, 
-        slide_show_timeout : 10000
+        slide_show_timeout : 0
     });

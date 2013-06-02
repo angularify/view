@@ -14,18 +14,17 @@ html, body{
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	     -o-user-select: none;
-	
-	-webkit-transition: all 600ms ease, opacity 600ms ease;
-           -moz-transition: all 600ms, opacity 600ms ease;
-            -ms-transition: all 600ms ease, opacity 600ms ease;
-             -o-transition: all 600ms ease, opacity 600ms ease;
-                transition: all 600ms ease, opacity 600ms ease;
+	 -webkit-transition: all 600ms ease, opacity 600ms ease;
+        -moz-transition: all 600ms, opacity 600ms ease;
+          -ms-transition: all 600ms ease, opacity 600ms ease;
+           -o-transition: all 600ms ease, opacity 600ms ease;
+              transition: all 600ms ease, opacity 600ms ease;
 }
 
 .presentation{
 	width: 100%;
 	height: 100%;
-    	margin-right: 0px;
+    margin-right: 0px;
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -37,26 +36,13 @@ html, body{
 
 .slide{
 	height: 100%;
-	width: 90%;
+	width: 100%;
 	font-size: 100%;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
+	margin: 0;
 	padding: 7% 0px;
-	right: 0;
-	margin-bottom: 0px;
-	overflow-y:hidden;
-	overflow-x:hidden;
+	right: 0;	
 	text-align: center;
 	box-shadow: 3px 3px 2px #ccc;
-}
-
-.sidebar{
-	font-size: 14px;
-	position: fixed;
-	width: 7em;
-	top: 10em;
-	right: 1em;
 }
 
 .btn{
