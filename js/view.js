@@ -1,16 +1,14 @@
 var View = (function(options) {
     
+    "use strict";
     // get slides
     var nl = document.getElementsByClassName('slide');
-
-    //get slide counter
-    var sc = document.getElementById("slide_counter");
 
     // convert NodeList with slides to array
     var slides = [];
     for (var i = 0, ref = slides.length = nl.length; i < ref; i++) {
         slides[i] = nl[i];
-    };
+    }
 
     // add listener to dblclick event to request fullscreen
     addEventListener("dblclick", toggleFullScreen, false);
@@ -30,8 +28,9 @@ var View = (function(options) {
     // get next slide after current
     var next_slide = function(){
         var current_slide_index = slides.indexOf(current_slide);
-        if (current_slide_index === slides_count - 1)
+        if (current_slide_index === slides_count - 1){
             return slides[current_slide_index];
+        }
         else{
             slides[current_slide_index + 1].scrollIntoView(true);
             return slides[current_slide_index + 1];
@@ -41,8 +40,9 @@ var View = (function(options) {
     // get previous slide after current
     var prev_slide = function(){
         var current_slide_index = slides.indexOf(current_slide);
-        if (current_slide_index === 0)
+        if (current_slide_index === 0){
             return slides[current_slide_index];
+        }
         else{
             slides[current_slide_index - 1].scrollIntoView(true);
             return slides[current_slide_index - 1]; 
@@ -57,12 +57,12 @@ var View = (function(options) {
         //get delta of mouse whell
         var delta = e.wheelDelta;
 
-        if(delta == -120 || delta == -3){
+        if(delta === -120 || delta === -3){
             return current_slide = next_slide();
         } else{
             return current_slide = prev_slide();
         }
-    };
+    }
 
     // move slide with keyboard
     function move(e){
@@ -75,8 +75,8 @@ var View = (function(options) {
             case 38:
                 // go to previous slide
                 return current_slide = prev_slide();
-        };  
-    };
+        }  
+    }
 
         // toggles full screen in presentation
     function toggleFullScreen(){
@@ -117,8 +117,9 @@ var View = (function(options) {
      */
     
     function check_slide_show(options){
-        if (this.slide_show === true && this  .slide_show_timeout > 0)
+        if (options.slide_show === true && options.slide_show_timeout > 0){
             play_presentation(options.slide_show_timeout);
+        }
     }
 });
 
@@ -128,5 +129,5 @@ var View = (function(options) {
  */
     View(options = {
         slide_show : true, 
-        slide_show_timeout : 0
+        slide_show_timeout : 10000
     });
