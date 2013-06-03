@@ -42,7 +42,11 @@ html, body{
 	padding: 7% 0px;
 	right: 0;	
 	text-align: center;
-	box-shadow: 3px 3px 2px #ccc;
+}
+
+:-webkit-full-screen .slide {
+  width: 100%;
+  height: 100%;
 }
 
 .btn{

@@ -15,27 +15,6 @@ var View = (function(options) {
     // add listener to dblclick event to request fullscreen
     addEventListener("dblclick", toggleFullScreen, false);
 
-    // toggles full screen in presentation
-    function toggleFullScreen(){
-    if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {              
-        if (document.documentElement.requestFullScreen) {
-                document.documentElement.requestFullScreen();
-        }   else if (document.documentElement.mozRequestFullScreen) {
-                document.documentElement.mozRequestFullScreen();
-        }   else if (document.documentElement.webkitRequestFullScreen) {
-            document.documentElement.webkitRequestFullScreen();
-    }
-    } else {
-            if (document.cancelFullScreen) {
-                document.cancelFullScreen();
-        }   else if (document.mozCancelFullScreen) {
-                document.mozCancelFullScreen();
-        }   else if (document.webkitCancelFullScreen) {
-                document.webkitCancelFullScreen();
-        }
-    }
-}
-
     // get slides count
     var slides_count = slides.length;
     // get current slide
@@ -45,13 +24,8 @@ var View = (function(options) {
     document.addEventListener('keydown', move, false);
     //mouse scroll
     document.addEventListener('mousewheel', mouse_scroll, false);
-    //mouse scroll for firefox
+    //support for firefox
     document.addEventListener('DOMMouseScroll', mouse_scroll, false);
-
-    // return element by id
-    var el = function(id){
-        return document.getElementById(id);
-    };
 
     // get next slide after current
     var next_slide = function(){
@@ -79,6 +53,7 @@ var View = (function(options) {
     function mouse_scroll(e){
         //scroll test
         console.log("Mouse scrolled...");
+
         //get delta of mouse whell
         var delta = e.wheelDelta;
 
@@ -103,6 +78,27 @@ var View = (function(options) {
         };  
     };
 
+        // toggles full screen in presentation
+    function toggleFullScreen(){
+    if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {              
+        if (document.documentElement.requestFullScreen) {
+                document.documentElement.requestFullScreen();
+        }   else if (document.documentElement.mozRequestFullScreen) {
+                document.documentElement.mozRequestFullScreen();
+        }   else if (document.documentElement.webkitRequestFullScreen) {
+            document.documentElement.webkitRequestFullScreen();
+    }
+    } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+        }   else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+        }   else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+        }
+    }
+}
+
     // slide show
     function presentation_start(){
         current_slide = next_slide();
@@ -121,7 +117,7 @@ var View = (function(options) {
      */
     
     function check_slide_show(options){
-        if (options.slide_show === true && options.slide_show_timeout > 0)
+        if (this.slide_show === true && this  .slide_show_timeout > 0)
             play_presentation(options.slide_show_timeout);
     }
 });

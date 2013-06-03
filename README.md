@@ -30,6 +30,7 @@ Features
 
   * Lightweight plugin for building web presentations.
   * Move slides with up/down key.
+  * Mouse scrolling of slides
   * Slide show with configurable timeout.
   * Full screenmode - double click anywhere to toggle on or off.
 
@@ -40,8 +41,6 @@ TODO
   * Effects.
   * Plugins.
   * Progress bar.
-  * Improve scrolling for MAC OS X
-  * Play button (automatically play presentation added)
 
 Contribute
 ============
