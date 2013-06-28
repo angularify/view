@@ -6,8 +6,8 @@ var View = (function(options) {
 
     // convert NodeList with slides to array
     var slides = [];
-    for (var i = 0, ref = slides.length = nl.length; i < ref; i++) {
-        slides[i] = nl[i];
+    for (var i = 0, n; n = nl[i]; ++i) {
+        slides.push(n);
     }
 
     // add listener to dblclick event to request fullscreen
@@ -52,7 +52,7 @@ var View = (function(options) {
     // mouse scrolling
     function mouse_scroll(e){
         //scroll test
-        console.log("Mouse scrolled...");
+        //console.log("Mouse scrolled...");
 
         //get delta of mouse whell
         var delta = e.wheelDelta;
@@ -78,7 +78,7 @@ var View = (function(options) {
         }  
     }
 
-        // toggles full screen in presentation
+    // toggles full screen in presentation
     function toggleFullScreen(){
     if ((!document.mozFullScreen && !document.webkitIsFullScreen)) {              
         if (document.documentElement.requestFullScreen) {
@@ -129,5 +129,5 @@ var View = (function(options) {
  */
     View(options = {
         slide_show : true, 
-        slide_show_timeout : 10000
+        slide_show_timeout : 0
     });
