@@ -1,6 +1,7 @@
 var View = (function(options) {
     
-    "use strict";
+    "use strict"; // jshint ;_;
+    
     // get slides
     var nl = document.getElementsByClassName('slide');
 
@@ -115,7 +116,6 @@ var View = (function(options) {
     /*
      * Check presentation options
      */
-    
     function check_slide_show(options){
         if (options.slide_show === true && options.slide_show_timeout > 0){
             play_presentation(options.slide_show_timeout);
@@ -129,5 +129,5 @@ var View = (function(options) {
  */
     View(options = {
         slide_show : true, 
-        slide_show_timeout : 0
+        slide_show_timeout : 1000
     });
