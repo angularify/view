@@ -129,5 +129,5 @@ var View = (function(options) {
  */
     View(options = {
         slide_show : true, 
-        slide_show_timeout : 1000
+        slide_show_timeout : 10000
     });
