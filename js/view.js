@@ -3,7 +3,7 @@ var View = (function(options) {
     "use strict"; // jshint ;_;
     
     // get slides
-    var nl = document.getElementsByClassName('slide');
+    var nl = document.querySelectorAll(".slide");
 
     // convert NodeList with slides to array
     var slides = [];
