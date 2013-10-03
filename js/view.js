@@ -52,9 +52,6 @@ var View = (function(options) {
 
     // mouse scrolling
     function mouse_scroll(e){
-        //scroll test
-        //console.log("Mouse scrolled...");
-
         //get delta of mouse whell
         var delta = e.wheelDelta;
 
