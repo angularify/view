@@ -8,8 +8,8 @@ Usage
 
   * Include `css/content.css` and `layout.css` to your html file.
   * Include at the end of `body` section `<script src='js/view.min.js'></script>` file.
-  * Create `div` tag with `class="slide"`. `div` will be indexed in the file.
-
+  * Create `div` tag with `class="slide"`.
+  
 Create presentation in your js file:
 
 ```javascript
