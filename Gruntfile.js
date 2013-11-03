@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // minify all src css files in src/ -> dist dir
+    // minify all src css/js files in src/ -> dist dir
     cssmin: {
 	  	minify: {
 	    expand: true,
@@ -14,17 +14,17 @@ module.exports = function(grunt) {
   	}, 
   	add_banner : {
   		options : {
-  			banner : "/* Minified Gasket stylesheet Copyright (c) 2013 @_voidPirate*/"
+  			banner : "/* Minified view stylesheet Copyright (c) 2013 @0xAX & @_voidpirate*/"
   		}, 
 			files: {
-      	'dist/view.min.css': 'css/view.css'
+      	'dist/view.min.css': 'src/css/view.css'
     	}
   	}
 	}, 
   uglify: {
     my_target: {
       files: {
-        "dist/view.min.js": "js/view.js"
+        "dist/view.min.js": "src/js/view.js"
       }
     } 
   }
