@@ -16,6 +16,7 @@ var View = (function(options) {
 
     // get slides count
     var slides_count = slides.length;
+
     // get current slide
     var current_slide = slides[0];
 
