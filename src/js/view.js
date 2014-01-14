@@ -56,9 +56,11 @@ var View = (function(options) {
         //get delta of mouse whell
         var delta = e.wheelDelta;
 
-        if(delta === -120 || delta === -3){
+        console.log(delta);
+        
+        if(delta < "-11"){
             return current_slide = next_slide();
-        } else{
+        } else if(delta > "11") {
             return current_slide = prev_slide();
         }
     }
